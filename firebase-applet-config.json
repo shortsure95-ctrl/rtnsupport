@@ -1,0 +1,11 @@
+{
+  "projectId": "rtn-support",
+  "appId": "1:1077343216688:web:2760da51dc7c44770eb9f5",
+  "apiKey": "AIzaSyA9-C-kNECGTRGo9k-gf-XczvOBhJLOmG0",
+  "authDomain": "rtn-support.firebaseapp.com",
+  "databaseURL": "https://rtn-support-default-rtdb.firebaseio.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "rtn-support.firebasestorage.app",
+  "messagingSenderId": "1077343216688",
+  "measurementId": "G-81SZCD425G"
+}

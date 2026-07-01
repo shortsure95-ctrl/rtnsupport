@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "RtnTable": {
+      "title": "RtnTable",
+      "description": "Represents a centralized database table stored in Firestore",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "description": "The array or object containing table data"
+        }
+      },
+      "required": ["value"]
+    }
+  },
+  "firestore": {
+    "/rtn_data/{tableId}": {
+      "schema": "RtnTable",
+      "description": "Centralized database tables synced from/to the server"
+    }
+  }
+}

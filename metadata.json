@@ -1,0 +1,8 @@
+{
+  "name": "Remix: RRTN Support",
+  "description": "পেমেন্ট এবং রেফারেল সিস্টেম সহ মেইল সেলিং ওয়েবসাইট",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

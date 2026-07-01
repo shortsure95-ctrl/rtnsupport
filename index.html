@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RTN Support - প্রিমিয়াম মেইল সেলিং প্ল্যাটফর্ম</title>
+    <script>
+      // Redefine window.fetch to be configurable and writable (with getter/setter) 
+      // to prevent "TypeError: Cannot set property fetch of #<Window> which has only a getter"
+      // when external environment/sandbox/iframe instruments attempt to assign it.
+      try {
+        const originalFetch = window.fetch;
+        let customFetch = originalFetch;
+        Object.defineProperty(window, 'fetch', {
+          get() {
+            return customFetch;
+          },
+          set(val) {
+            customFetch = val;
+          },
+          configurable: true,
+          enumerable: true
+        });
+      } catch (e) {
+        console.warn("Could not make window.fetch configurable:", e);
+      }
+
+      // Suppress cross-origin iframe/external script errors (e.g. from Google Drive iframe previewer)
+      // that trigger "Script error." in the parent environment's logs, as well as window.fetch property assignment errors.
+      window.onerror = function(message) {
+        const msgStr = String(message || "");
+        if (msgStr === 'Script error.' || msgStr.includes('Script error') || msgStr.includes('property fetch') || msgStr.includes('property \'fetch\'')) {
+          return true; // Prevent default error handler from firing
+        }
+      };
+      window.addEventListener('error', function(e) {
+        const msgStr = String(e.message || "");
+        if (msgStr === 'Script error.' || msgStr.includes('Script error') || msgStr.includes('property fetch') || msgStr.includes('property \'fetch\'')) {
+          e.stopImmediatePropagation();
+          e.preventDefault();
+        }
+      }, true);
+    </script>
+    <meta name="description" content="RTN Support - পেমেন্ট এবং রেফারেল সিস্টেম সহ বিশ্বস্ত মেইল সেলিং ওয়েবসাইট। বিকাশ পেমেন্টের মাধ্যমে খুব সহজেই হটমেইল, জিমেইল এবং আউটলুক অ্যাকাউন্ট ক্রয় করুন।" />
+    <meta name="keywords" content="rtn support, mail selling, buy hotmail, buy outlook, bKash mail selling, referral system, মেইল ক্রয়, হটমেইল বিক্রয়, বিকাশ পেমেন্ট, রতন সাপোর্ট" />
+    <meta property="og:title" content="RTN Support - প্রিমিয়াম মেইল সেলিং প্ল্যাটফর্ম" />
+    <meta property="og:description" content="বিকাশ পেমেন্টের মাধ্যমে খুব সহজেই হটমেইল এবং আউটলুক অ্যাকাউন্ট ক্রয় করুন। রেফার করে প্রতি ডিপোজিটে ইনকাম করুন ৫% বোনাস।" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

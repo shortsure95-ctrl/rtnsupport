@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default-deny catch-all safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Allow the server-side client to read and write database tables
+    match /rtn_data/{tableId} {
+      allow read, write: if true;
+    }
+  }
+}

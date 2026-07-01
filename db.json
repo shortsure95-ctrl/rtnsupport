@@ -1,0 +1,328 @@
+{
+  "users": [
+    {
+      "id": "01700000000",
+      "password": "admin",
+      "balance": 1000,
+      "referredBy": null,
+      "createdAt": "2026-06-29T03:38:51.000Z",
+      "isBlocked": false,
+      "isAdmin": true
+    },
+    {
+      "id": "01800000000",
+      "password": "user123",
+      "balance": 150,
+      "referredBy": "01700000000",
+      "createdAt": "2026-06-29T03:38:51.000Z",
+      "isBlocked": false,
+      "isAdmin": false
+    },
+    {
+      "id": "01609166109",
+      "password": "@123321@",
+      "balance": 0,
+      "referredBy": null,
+      "createdAt": "2026-06-29T10:50:46.054Z",
+      "isBlocked": false,
+      "isAdmin": false
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-9proxy-100mb-20tk",
+      "name": "9 proxy 100 mb 20 tk",
+      "description": "৯ প্রক্সি ১০০এমবি ২০ টাকা। এডমিন প্যানেল থেকে আপলোড করা প্রক্সি ইনস্ট্যান্ট ডেলিভারি পাবেন।",
+      "price": 20,
+      "stock": 0
+    },
+    {
+      "id": "prod-hotmail-fresh-1tk",
+      "name": "Hotmail Fresh",
+      "description": "হটমেইল ফ্রেশ অ্যাকাউন্ট ১ টাকা। মেইল ক্রয়ের পর ১ ঘণ্টা ওয়ারেন্টি পাবেন।",
+      "price": 1,
+      "stock": 0
+    },
+    {
+      "id": "prod-9proxy-1gb",
+      "name": "9 proxy 1gb 150 tk",
+      "description": "৯ প্রক্সি ১জিবি ১৫০ টাকা। ব্যবহারের পর রিভিউ দিতে ভুলবেন না।",
+      "price": 150,
+      "stock": 0
+    },
+    {
+      "id": "prod-owlproxy-200mb",
+      "name": "owl proxy 200 mb 20 taka",
+      "description": "আউল প্রক্সি ২০০এমবি ২০ টাকা। যেকোনো প্রয়োজনে হোয়াটসঅ্যাপে যোগাযোগ করুন।",
+      "price": 20,
+      "stock": 0
+    },
+    {
+      "id": "prod-chatgpt-plus-500tk",
+      "name": "ChatGPT Plus Personal",
+      "description": "চ্যাটজিপিটি প্লাস পার্সোনাল অ্যাকাউন্ট ৫০০ টাকা। ১ মাস মেয়াদি প্রিমিয়াম সাবস্ক্রিপশন।",
+      "price": 500,
+      "stock": 0
+    },
+    {
+      "id": "prod-gemini-18m-500tk",
+      "name": "Gemini 18 Month",
+      "description": "জেমিনি ১৮ মাস মেয়াদি প্রিমিয়াম অ্যাকাউন্ট ৫০০ টাকা। হাই কোয়ালিটি ফুল ওয়ারেন্টি।",
+      "price": 500,
+      "stock": 0
+    }
+  ],
+  "mails": [
+    {
+      "id": "seed-mail-1",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "clara.wilson2026@hotmail.com:Clara#9872:2FA_SECRET_CLARA01",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:00:00.000Z"
+    },
+    {
+      "id": "seed-mail-2",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "sarah.connor2026@hotmail.com:Sarah#4521:2FA_SECRET_SARAH02",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:01:00.000Z"
+    },
+    {
+      "id": "seed-mail-3",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "jessica.alba2026@hotmail.com:Jessica#8812:2FA_SECRET_JESSICA03",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:02:00.000Z"
+    },
+    {
+      "id": "seed-mail-4",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "emma.watson2026@hotmail.com:Emma#7102:2FA_SECRET_EMMA04",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:03:00.000Z"
+    },
+    {
+      "id": "seed-mail-5",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "olivia.wilde2026@hotmail.com:Olivia#3948:2FA_SECRET_OLIVIA05",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:04:00.000Z"
+    },
+    {
+      "id": "seed-mail-6",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "sophia.loren2026@hotmail.com:Sophia#1029:2FA_SECRET_SOPHIA06",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:05:00.000Z"
+    },
+    {
+      "id": "seed-mail-7",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "isabella.swan2026@hotmail.com:Isabella#8374:2FA_SECRET_ISABELLA07",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:06:00.000Z"
+    },
+    {
+      "id": "seed-mail-8",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "mia.khalifa2026@hotmail.com:Mia#9932:2FA_SECRET_MIA08",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:07:00.000Z"
+    },
+    {
+      "id": "seed-mail-9",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "charlotte.york2026@hotmail.com:Charlotte#2938:2FA_SECRET_CHARLOTTE09",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:08:00.000Z"
+    },
+    {
+      "id": "seed-mail-10",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "amelia.earhart2026@hotmail.com:Amelia#1129:2FA_SECRET_AMELIA10",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:09:00.000Z"
+    },
+    {
+      "id": "seed-mail-11",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "evelyn.salt2026@hotmail.com:Evelyn#7743:2FA_SECRET_EVELYN11",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:10:00.000Z"
+    },
+    {
+      "id": "seed-mail-12",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "abigail.adams2026@hotmail.com:Abigail#1283:2FA_SECRET_ABIGAIL12",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:11:00.000Z"
+    },
+    {
+      "id": "seed-mail-13",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "harper.lee2026@hotmail.com:Harper#3849:2FA_SECRET_HARPER13",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:12:00.000Z"
+    },
+    {
+      "id": "seed-mail-14",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "emily.dickinson2026@hotmail.com:Emily#8829:2FA_SECRET_EMILY14",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:13:00.000Z"
+    },
+    {
+      "id": "seed-mail-15",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "elizabeth.taylor2026@hotmail.com:Elizabeth#9102:2FA_SECRET_ELIZABETH15",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:14:00.000Z"
+    },
+    {
+      "id": "seed-mail-16",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "sofia.vergara2026@hotmail.com:Sofia#2239:2FA_SECRET_SOFIA16",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:15:00.000Z"
+    },
+    {
+      "id": "seed-mail-17",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "avery.jackson2026@hotmail.com:Avery#4852:2FA_SECRET_AVERY17",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:16:00.000Z"
+    },
+    {
+      "id": "seed-mail-18",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "scarlett.johansson2026@hotmail.com:Scarlett#1987:2FA_SECRET_SCARLETT18",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:17:00.000Z"
+    },
+    {
+      "id": "seed-mail-19",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "madison.beer2026@hotmail.com:Madison#3948:2FA_SECRET_MADISON19",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:18:00.000Z"
+    },
+    {
+      "id": "seed-mail-20",
+      "productId": "prod-hotmail-fresh-1tk",
+      "content": "grace.kelly2026@hotmail.com:Grace#5829:2FA_SECRET_GRACE20",
+      "isSold": false,
+      "soldTo": null,
+      "soldAt": null,
+      "createdAt": "2026-06-29T10:19:00.000Z"
+    }
+  ],
+  "deposits": [
+    {
+      "id": "dep-1",
+      "userId": "01800000000",
+      "amount": 200,
+      "bKashNumber": "01800000000",
+      "transactionId": "TRX8829910",
+      "status": "approved",
+      "createdAt": "2026-06-29T01:00:00.000Z",
+      "approvedAt": "2026-06-29T01:05:00.000Z"
+    },
+    {
+      "id": "dep-2",
+      "userId": "01800000000",
+      "amount": 100,
+      "bKashNumber": "01800000000",
+      "transactionId": "TRX9938810",
+      "status": "pending",
+      "createdAt": "2026-06-29T03:00:00.000Z",
+      "approvedAt": null
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-1",
+      "userId": "01800000000",
+      "sheetLink": "https://docs.google.com/spreadsheets/d/1abc123xyz/edit",
+      "note": "সব মেইলে ২-ফ্যাক্টর অ্যাক্টিভ করা আছে। রিকভারি কোড শিটে দেওয়া আছে।",
+      "status": "pending",
+      "createdAt": "2026-06-29T02:30:00.000Z"
+    }
+  ],
+  "notices": [
+    {
+      "id": "not-1",
+      "content": "আসসালামু আলাইকুম, আমাদের মেইল সেলিং ওয়েবসাইটে আপনাকে স্বাগতম। এখন থেকে আপনারা খুব সহজেই বিকাশ পেমেন্টের মাধ্যমে হটমেইল এবং আউটলুক অ্যাকাউন্ট ক্রয় করতে পারবেন। নতুন পণ্য নিয়মিত যুক্ত করা হচ্ছে। যেকোনো প্রয়োজনে লাইভ চ্যাট অথবা হোয়াটসঅ্যাপে যোগাযোগ করুন।",
+      "createdAt": "2026-06-29T00:00:00.000Z"
+    }
+  ],
+  "config": {
+    "referralBonusPercent": 5,
+    "bkashNumber": "01788888888",
+    "tokenToCodeLink": "https://tokentocode.com",
+    "twoFactorCodeLink": "https://2fa.live",
+    "sourcingLink": "https://sourcing-hub.com",
+    "adminWhatsApp": "8801788888888",
+    "developerWhatsApp": "8801700000000"
+  },
+  "chatMessages": [
+    {
+      "id": "chat-1",
+      "userId": "01800000000",
+      "sender": "user",
+      "message": "ভাইয়া, হটমেইল ওল্ড অ্যাকাউন্টগুলো কি স্টকে আছে?",
+      "createdAt": "2026-06-29T03:10:00.000Z"
+    },
+    {
+      "id": "chat-2",
+      "userId": "01800000000",
+      "sender": "admin",
+      "message": "হ্যাঁ ভাইয়া, স্টকে আছে। আপনি ব্যালেন্স এড করে এখনই সরাসরি কিনে নিতে পারেন।",
+      "createdAt": "2026-06-29T03:12:00.000Z"
+    },
+    {
+      "id": "chat-1782730455703",
+      "userId": "01609166109",
+      "sender": "user",
+      "message": "hi",
+      "createdAt": "2026-06-29T10:54:15.703Z"
+    }
+  ]
+}
